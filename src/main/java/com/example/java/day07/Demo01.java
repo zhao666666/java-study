@@ -12,6 +12,10 @@ package com.example.java.day07;
  */
 public class Demo01 {
 
+    protected void buy(){
+        System.out.println("父类");
+    }
+
     private static void A(){
 
     }
@@ -27,9 +31,7 @@ public class Demo01 {
     private void Demo01(){
 
     }
-    public void buy(){
 
-    }
 
     public void buy(int a){
 

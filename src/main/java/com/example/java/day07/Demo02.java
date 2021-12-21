@@ -7,9 +7,11 @@ package com.example.java.day07;
  * @Description: 重写，参数一致，返回值一致
  */
 public class Demo02 extends Demo01 {
+
     @Override
     public void buy() {
         super.buy();
+        System.out.println("子类");
     }
 
 
@@ -26,6 +28,8 @@ public class Demo02 extends Demo01 {
         // 不应该通过类实例访问静态成员
        // demo04.a();
         demo04.b();
+        Demo02 demo02 = new Demo02();
+        demo02.buy();
     }
 
 }
