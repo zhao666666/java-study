@@ -17,7 +17,7 @@ public class ClassDemo {
     // ...语法糖，可以变化参数个数
     public static void main(String... args) throws NoSuchFieldException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         FinalDemo finalDemo = new FinalDemo("!11", 1);
-        Class clazz = finalDemo.getClass();
+        Class clazz = FinalDemo.class;
         System.out.println(clazz.getName());
         System.out.println(clazz.getSimpleName());
 
@@ -37,6 +37,14 @@ public class ClassDemo {
         Object value = bMethod.invoke(finalDemo);
         System.out.println(value.toString());
 
+        Field abc = clazz.getDeclaredField("b");
+        abc.setAccessible(true);
+        abc.set(finalDemo,1111);
+        System.out.println("==============>"+b.get(finalDemo));
+
+        //System.out.println(o.toString());
+
+
 
         Method equalsDemo = clazz.getDeclaredMethod("equals",Object.class);
         System.out.println(equalsDemo.getAnnotatedReturnType());
@@ -45,7 +53,7 @@ public class ClassDemo {
         Annotation annotation = clazz.getAnnotation(SubAnnotation.class);
         System.out.println(annotation);
 
-        Method setB = clazz.getDeclaredMethod("setB", int.class);
+        //Method setB = clazz.getDeclaredMethod("setB", int.class);
 
     }
 }

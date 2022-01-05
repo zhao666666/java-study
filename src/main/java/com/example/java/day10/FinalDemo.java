@@ -13,6 +13,7 @@ public class FinalDemo {
     // final 修饰方法   方法不可以被重写
     // final 修饰形参   不可以在给形参赋值
     // final 修饰变量   不可以被复制，值不可以变
+    @SubAnnotation
     private String b;
     public int count;
     private final String a = "5";

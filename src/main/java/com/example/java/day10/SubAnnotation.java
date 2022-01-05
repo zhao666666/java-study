@@ -8,7 +8,7 @@ import java.lang.annotation.*;
  * @Version: 1.0
  * @Description:
  */
-@Target(value={ElementType.TYPE,ElementType.METHOD})
+@Target(value={ElementType.TYPE,ElementType.METHOD,ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited  //可以继承

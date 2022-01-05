@@ -12,4 +12,7 @@ public class Merchandise {
     public int count;
     public double soldPrice;
     public double purchasePrice;
+
+    public void buy(int countToBuy) {
+    }
 }
