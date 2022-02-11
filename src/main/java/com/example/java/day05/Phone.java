@@ -1,6 +1,5 @@
 package com.example.java.day05;
 
-import sun.plugin2.gluegen.runtime.CPU;
 
 /**
  * @Author: zhaojie
@@ -8,8 +7,8 @@ import sun.plugin2.gluegen.runtime.CPU;
  * @Version: 1.0
  * @Description: 包的引用
  */
-public class Phone {
-    public static void main(String[] args) {
-        System.out.println(CPU.is32Bit());
-    }
-}
+//public class Phone {
+//    public static void main(String[] args) {
+//        System.out.println(CPU.is32Bit());
+//    }
+//}
